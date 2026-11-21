@@ -1,0 +1,15 @@
+{
+  "name": "seo-pm",
+  "version": "1.0.0",
+  "description": "Simple self-hosted SEO project management: keyword tracking, task board, site audits, backlinks",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "check": "node --check server.js && node --check db.js && node --check public/app.js"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^13.2.0",
+    "express": "^5.3.0"
+  }
+}
