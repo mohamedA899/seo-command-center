@@ -1,6 +1,6 @@
 # SEO PM
 
-A simple, self-hosted SEO project management system for personal use. Node.js + Express + SQLite, single-user, no login, no external services. Your data stays in a local SQLite file.
+A simple, self-hosted SEO project management system for personal use. Built on Node.js built-ins only — **zero npm dependencies, no build step, no install**. Single-user, no login, no external services. Your data stays in a local SQLite file.
 
 ## Features
 
@@ -13,12 +13,21 @@ A simple, self-hosted SEO project management system for personal use. Node.js + 
 
 ## Run
 
+Requires **Node.js 22.13+** (for the built-in SQLite module). No `npm install` needed.
+
 ```bash
-npm install
 npm start
 ```
 
+or equivalently:
+
+```bash
+node --experimental-sqlite --no-warnings server.js
+```
+
 Open http://localhost:3000 in your browser.
+
+Check your version with `node --version`. If yours is older, update from [nodejs.org](https://nodejs.org/) — it's a 2-minute install and the app keeps working afterwards.
 
 ## Configuration
 
